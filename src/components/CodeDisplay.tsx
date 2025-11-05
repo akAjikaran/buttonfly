@@ -34,8 +34,8 @@ const CodeDisplay = ({ button, onClose }: CodeDisplayProps) => {
         }
     };
     return (
-        <div className='fixed inset-0 bg-[black/50] backdrop-blur-sm z-50 flex items-center justify-center p-4'>
-            <div className='bg-[#FDF9EE] rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col '>
+        <div className='fixed inset-0 bg-[black/50] backdrop-blur-sm z-50 flex items-center justify-center p-4 '>
+            <div className='border border-black bg-[#FDF9EE] rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col '>
 
                 {/* Header */}
                 <div className='p-6 border-b border-slate-200 flex items-center justify-between'>
@@ -47,7 +47,7 @@ const CodeDisplay = ({ button, onClose }: CodeDisplayProps) => {
                         onClick={onClose}
                         className='p-2 hover:bg-slate-100 rounded-lg transition-colors'
                     >
-                        <X className="w-5 h-5 text-slate-600"/>
+                        <X className="w-5 h-5 text-slate-600" />
                     </button>
                 </div>
 
@@ -108,9 +108,9 @@ const CodeDisplay = ({ button, onClose }: CodeDisplayProps) => {
                 {/* Footer */}
                 <div className=' my-8 px-6 flex justify-between items-center'>
                     <p className='text-slate-600'>Copy the code and paste it into your project</p>
-                    <button 
-                    onClick={onClose}
-                    className='py-2 px-4 border border-[#FF9800] rounded-md text-md hover:bg-[#FF9800]'
+                    <button
+                        onClick={onClose}
+                        className='py-2 px-4 border border-[#FF9800] rounded-md text-md hover:bg-[#FF9800]'
                     >Close</button>
                 </div>
             </div>
