@@ -42,7 +42,7 @@ function App() {
                 alt="mascot"
                 width={200}
                 height={200}
-                className='' />
+                className='md:w-full w-[130px]' />
             </div>
 
             <div className='text-center'>
@@ -73,9 +73,11 @@ function App() {
         {/* Footer */}
         <footer className='border-t border-[#DED4B2] backdrop-blur-sm bg-[#F6F0DF]  mt-16'>
           <div className='container mx-auto px-4 py-8 text-center'>
-            <p className='text-[#FF9800]'>Created by
+            {/* <p className='text-[#FF9800]'>Created by
               <a className='text-black text-md font-semibold underline pl-1 hover:text-gray-600' target='_blank' href="https://www.linkedin.com/in/ajikaran-ramesh-8869501a7/">
-              ajikaran</a></p>
+              ajikaran</a></p> */}
+              <p className='text-black'>Click button to copy code
+             </p>
           </div>
         </footer>
       </div>
